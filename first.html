@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="javascript1.js" defer></script>
+        <link rel="stylesheet" href="style1.css">
+        <style>
+            body{
+                background: lightgreen;
+            }
+            h1{
+                border-style: dashed;
+                border-color: darkolivegreen;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <h1 id="tennis">Tennis</h1>
+        </center>
+        <h2>Current Time</h2>
+        <div id="clock"></div>
+        <script>
+            function updateClock() {
+              var now = new Date();
+              var hours = now.getHours();
+              var minutes = now.getMinutes();
+              var seconds = now.getSeconds();
+              document.getElementById('clock').innerHTML = hours + ':' + minutes + ':' + seconds;
+            }
+            setInterval(updateClock, 1000);
+          </script>
+
+        <h3 onclick ="turnPurple(this)" id = "h3">History</h3>
+        <p>Tennis was made in 12th century France when it was played in the form of a handball game called 'paume'. The game involved hitting a ball back and forth by hand. Since then, the game has evolved into one of the largest played games with millions of fans around the world.</p> 
+        <img src="https://www.thoughtco.com/thmb/gCMSzO4N-OIWQcxhj9QRLC6rikw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-51246498-56b008cf5f9b58b7d01fa004.jpg" height="200px" width="300px" id="animatedElement">
+
+        <h3 onclick ="turnPurple(this)" id = "h3">Open Era/Grand Slams</h3>
+        <p>The Open Era is the current era of professional tennis. It began in 1968 when Grand Slam tournaments allowed professional players to compete with amateurs, ending the dividion that had persisted since the dawn of the sport. Grand Slams
+            Grand Slams are the biggest tournaments in tennis, with more than 100 players from around the world. There are 4 major slams, the Australiam Open, French Open, Wimbledon, and the US Open.
+        </p>
+        <a href="second.html" target=”_blank”>Click Here to Learn More</a> <!--Links to second page/ grand slams-->
+        <img src="https://img.bleacherreport.net/img/article/media_slots/photos/002/632/189/0d743ae0c415b76227998dd3e4444715_crop_exact.jpg?w=2975&h=2048&q=85" height="200px" width="300px">
+        
+        <h3 onclick ="turnPurple(this)" id = "h3">Top Players</h3>
+        <p>
+            The current top players in tennis for men's and women's singles are Novak Djokovic, Daniil Medvedev, Aryna Sabalenka, and Coco Gauff. These players are constantly winning matches along with grand slams. They dedicate
+            everything they have to the sport truly because they love it. Although they get to do what they love, many times, it can be
+            be stressful and draining, but they keep doing it for the fans and themselves. Click on the image to learn more!
+        </p>
+        <a href="third.html" target=”_blank”>
+        <img src="https://content.api.news/v3/images/bin/15c67b3297d16bdb9cc06a811dde99ad" height="200px" width="300px">
+        </a> <!--link through image to third page about current top players-->
+
+</html>
+
+
+<!--add live broadacst
+videos 
+News Stories-->

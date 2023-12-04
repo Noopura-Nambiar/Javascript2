@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript2.js" defer></script>
+    <link rel="stylesheet" href="style2.css">
+    <style>
+        body{
+            background-color:lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Grand Slams</h1>
+
+<div>
+    <h3 onclick ="turnBlue(this)">Australian Open</h3>
+    <img src="https://www.atptour.com/en/tournaments/australian-open/580/-/media/images/news/2023/01/30/13/01/australian-open-2023-tournament-image.jpg" height="165px" width="300px" style="float: right">
+    <p id="g">The Australian Open is a tennis tournament held annually at Melbourne Park in Australia. The tournament is the first of the four Grand Slams and held in January. 
+        The Australian Open is the highest attended Grand Slam event, with more than 902,000 people attending. This Grand Slam is played on cushion acrylic hard courts, similar
+        to the US Open. It is known for  its fast-paced and aggressive style of play.
+    </p>
+    
+</div>
+
+<div>
+    <h3 onclick ="turnBrick(this)">French Open</h3>
+    <img src="https://cdn.roadtrips.com/wp-content/uploads/2016/10/rolland-garros.jpg" height="175px" width="300px" style="float: right">
+    <p id="r"> The French Open, also called Roland-Garros is the only Grand Slam played on clay courts. Players such as Rafael Nadal and Carlos Alcaraz are popular for winning on clay courts.
+        The French open is held over two weeks at the Stade Roland Garros in Paris France, beginning in late May each year. The tournament is named after the Franch aviator Roland Garros. It is chronoligically the second of the four annual Grand Slam tournaments,
+         coming after the Australian Open. The French Open is widely regarded as the most physically demanding  tournaments in tennis due to the clay surface characteristics.
+         The crushed-brick mixture that constitutes the base of a clay court produces the highest bounce and most friction of the three surfaces (hard court, grass, and clay).
+    </p>
+
+</div>
+
+<div>
+    <h3 onclick ="turnPurple(this)">Wimbledon</h3>
+    <img src="https://photo-assets.wimbledon.com/images/pics/misc/headerno1.jpg" height="175px" width="300px" style="float: right">
+    <p id="a">Wimbledon is the oldest tennis tournament in the world and is regarded by many as the most prestigious. It is played on outdoor grass courts in the All England Lawn Tennis in Wimbledon, London. Wimbledon is the only
+        major played on grass, the traditional playing surface. The tounament takes place in late June and early July, coming right after the French Open in May. Wimbledon traditions include a strict all-white dres code for competitors, it is also known for 
+        strawberries and cream, a popular dessert.
+    </p>
+</div>
+
+<div>
+    <h3 onclick ="turnGreen(this)">US Open</h3>
+    <img src="https://www.atptour.com/en/tournaments/us-open/560/-/media/images/news/2021/09/13/07/28/us-open-tournament-page-2021.jpg" height="175px" width="300px" style="float: right">
+    <p id="y">The US Open is a hardcourt tennis tournament held in Queens, New York. It is the final Grand Slam tournament of the year, held in August. The tournament consists of five primary championships: men's and women's singles, men's and women's doubles, and mixed 
+        doubles. The tournament also includes events for senior, junior, and wheel chair players. The tournament has been played on acrylic hardcourts, similar to the Australian Open. A huge part of the tournament is Billie Jean King, who fought for equal pay among
+        women and men in tennis. Her accomplishments were recently celebrated this year for 50 years of equal pay. The US Open is widely known for giving players with lower ranks an opportunity to win, with players such as Ben Shelton and Coco Gauff rising from the 
+        bottom and going on to the semifinals and finals. 
+    </p>
+    
+</div>
+
+<div id="image-slider">
+    <img src="image1.jpg" id="slider-img" height="245px" width="415px" class="center">
+</div>
+  <script>
+    var images = ["image1.jpg", "image2.jpg", "image3.jpg", "image4.jpg"];
+    var currentImage = 0;
+  
+    function changeImage() {
+      currentImage = (currentImage + 1) % images.length;
+      document.getElementById('slider-img').src = images[currentImage];
+    }
+  
+    setInterval(changeImage, 3000); // Change image every 3 seconds
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="javascript3.js" defer></script>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        body{
+            background-color: lightyellow ;
+        }
+    </style>
+</head>
+<body>
+    <h1 >Current Top Players</h1>
+    <div id="quote"></div>
+<script>
+  var quotes = [
+    "Everything in life is a lesson. - Novak Djokovic",
+    "I've grown most not from victories, but setbacks. - Serena Williams",
+    "I play each point like my life depends on it. - Rafael Nadal",
+    "There's no way around hard work. Embrace it. - Roger Federer"
+  ];
+  var randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  document.getElementById('quote').innerHTML = randomQuote;
+</script>
+    <h2 onclick ="turnBlue(this)">Men's Singles</h2>
+<div>
+    <h4>Novak Djokovic</h4>
+    <img src="card 1.png" width = "280px" height  = "360px" style="float:left">
+    <p>Djokociv has won an all-time record 24 Grand Slam singles titles, including a record ten Australian open
+        titles. Overall, he has won 96 singles titles, including a record 69 Big Titles (24 majors, a record 39 
+        Masters, and a joint-record six ATP Finals). Djokovic is known for having a rash attitude on court, but a warm personality
+        off court and is a favorite to many. He is considered the best player in history, playing in multiple decades and defeating the 
+        best each time.
+    </p>
+    <a href="https://www.atptour.com/en/players/novak-djokovic/d643/overview" target=”_blank” title="World Number 1">More on Djokovic</a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div>
+    <h4>Carlos Alcaraz</h4>
+    <img src="card 2.png" width = "280px" height  = "360px" style="float:left">
+    <p>
+        Carlos Alcaraz has been ranked as high as world No. 1 in men's singles by the Association of Tennis Professionals (ATP).
+        Although young, Alcaraz has climbed up the ranks rather quickly and become a favorite amongst the crowd. He is known for 
+        doing tricks and making jokes in between games, never loosing his smile. His attitude resonates with people and gives them a sense of
+        happiness and calmness.
+    </p>
+    <a href="https://www.atptour.com/en/players/carlos-alcaraz/a0e2/overview" target=”_blank” title="World Number 2">More on Alacarz</a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div>
+    <h4>Daniil Medvedev</h4>
+    <img src="card 3.png" width = "280px" height  = "360px" style="float:left">
+    <p>Daniil Medvedev is known as one of tennis' great on-court thinkers, making his calls wisely along with shots. He was put on the map when he won 
+        the US Open in 2021. He, like Djokovic, tends to get angry on court, making him less likeable comapred to players like Alcaraz and Federer. Regardless, 
+        Medvedev is an accomplished player who held the world no. 1 title for 16 weeks.
+    </p>
+    <a href="https://www.atptour.com/en/players/daniil-medvedev/mm58/overview" target=”_blank” title="World Number 3">More on Medvedev</a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h2 onclick ="turnRed(this)">Women's Singles</h2>
+<div>
+    <h4>Aryna Sabalenka</h4>
+    <img src="card 4.png" width = "280px" height  = "360px" style="float:left">
+    <p>Aryna Sabalenka, a rising tennis stay known for her powerful game and determination, hails from Minsk, Belarus, and started her tennis jorney at a young age.
+        Standing at six fett tall, she boasts a fierce baseline style with a great serve, making her a dangerous opponent in singles and doubles. Achieving a career-high 
+        singles ranking of no.1, Sabalenka's powerful play, coupled with her engaging personality and dedication, has earned her a growing fan base and respect in the tennis world.
+    </p>
+    <a href="https://www.itftennis.com/en/players/aryna-sabalenka/800342816/blr/wt/S/overview/" target=”_blank” title="World Number 1">More on Sabalenka</a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div>
+    <h4>Iga Swiatek</h4>
+    <img src="card 5.png" width = "280px" height  = "360px" style="float:left">
+    <p>Iga Swiatek, the Polish tennis sensation, burst onto the scene with remarkable  talent and poise on the court. Swiatek is renowned for her aggressive baseline game and exceptional shot-making 
+        ability. In 202, she won her career-defining moment by winning the French Open, becoming the youngest Polish player and the first from her country to win a Grand Slam singles title.
+    </p>
+    <a href="https://www.itftennis.com/en/players/iga-swiatek/800375475/pol/wt/s/overview/" target=”_blank” title="World Number 2">More on Swiatek</a>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div>
+    <h4>Coco Guaff</h4>
+    <img src="card 6.png" width = "280px" height  = "360px" style="float:left">
+    <p> Coco Gauff is a tennis prodigy who made a singificant impact on the sport at a young age. Known for her exceptional athleticism and fearless on-court demeanor, Gauff gained global recognition when she reached the fourth round of Wimbledon in 2019 at the age of 15.
+        Since then, she has continued to impress, becoming one ofthe most promising and exciting young talents in women's tennis. This year, she has won her first grand slam, the US Open.
+    </p>
+    <a href="https://www.itftennis.com/en/players/coco-gauff/800504325/usa/wt/s/overview/" target=”_blank” title="World Number 3">More on Gauff</a>
+</div>
+</body>
+</html>
